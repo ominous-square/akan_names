@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Akan Name Generator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.jpeg">
+  </head>
+  <body>
+      <div class="content">
+          <div class="container">
+              <h1>Akan Names</h1>
+              <h3>Background Story</h3>
+              <p id="storyLine">
+                  Akan names are derived from Ghanian culture.
+                  Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.
+                  Here are the Akan names:
+              </p>
+              <table class="table" align="center">
+                <thead>
+                    <tr>
+                        <th scope="col">Day of the week</th>
+                        <th scope="col">Male</th>
+                        <th scope="col">Female</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Sunday</th>
+                        <td>Kwasi</td>
+                        <td>Akusua</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Monday</th>
+                        <td>Kwadwo</td>
+                        <td>Adwoa</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tuesday</th>
+                        <td>Kwabena</td>
+                        <td>Abenaa</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wednesday</th>
+                        <td>Kwaku</td>
+                        <td>Akua</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Thursday</th>
+                        <td>Yaw</td>
+                        <td>Yaa</td>
+                    </tr>
+                    <tr>
+                <th scope="row">Friday</th>
+                <td>Kofi</td>
+                <td>Afua</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Saturday</th>
+                        <td>Kwame</td>
+                        <td>Ama</td>
+                    </tr>
+                </tbody>
+              </table>
+
+              <br>
+
+              <form class="myform" onsubmit="return getAkanName()">
+                    <label for="year-of-birth">
+                        Year:<input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required="">
+                    </label>
+
+                    <label for="month-of-birth">
+                        Month:<input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required="">
+                    </label>
+
+                    <label for="day-of-birth">
+                        Day:<input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required="">
+                    </label>
+                    
+                    <br>
+
+                    <label for="gender">
+                        <p>Select your gender:</p>
+                        Male
+                        <input id="male-input" type="radio" name="gender" value="male" required="">
+                        Female
+                        <input id="female-input" type="radio" name="gender" value="female" required="">
+                        </label>
+                    
+                    <input id="get-name" type="submit" name="" value="Generate Name">
+                </form>
+
+                <br>
+
+                <form onsubmit="return clearInput()">
+                    <input class="clear" type="submit" value="Clear Input">
+                </form>
+
+                <br>
+
+                <h4 id="display-name">
+                    <p> Your Akan name is shown below:</p>
+                </h4>
+
+                <p id="result"></p>
+          </div>
+      </div>
+      <script src="scripts.js"></script>
+  </body>
+</html>
